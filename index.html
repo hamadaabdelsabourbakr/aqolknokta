@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>‰ﬂ  „÷Õﬂ… Õ”» «·»·œ - „’—</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-laugh-beam"></i> ‰ﬂ  »·œÌ</h1>
+            <p class="subtitle">«÷Õﬂ „‰ ﬁ·»ﬂ „⁄ ‰ﬂ  „’—Ì… Ê√Œ—Ï „‰ »·«œ «·⁄«·„</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="country-selection">
+            <h2><i class="fas fa-globe-africa"></i> «Œ — »·œ «·‰ﬂ …</h2>
+            <div class="country-buttons">
+                <button class="country-btn active" data-country="egypt">
+                    <img src="https://flagcdn.com/w40/eg.png" alt="„’—" class="flag-icon">
+                    <span>„’—</span>
+                </button>
+                <button class="country-btn" data-country="saudi">
+                    <img src="https://flagcdn.com/w40/sa.png" alt="«·”⁄ÊœÌ…" class="flag-icon">
+                    <span>«·”⁄ÊœÌ…</span>
+                </button>
+                <button class="country-btn" data-country="uae">
+                    <img src="https://flagcdn.com/w40/ae.png" alt="«·≈„«—« " class="flag-icon">
+                    <span>«·≈„«—« </span>
+                </button>
+                <button class="country-btn" data-country="lebanon">
+                    <img src="https://flagcdn.com/w40/lb.png" alt="·»‰«‰" class="flag-icon">
+                    <span>·»‰«‰</span>
+                </button>
+                <div class="coming-soon">
+                    <p>ﬁ—Ì»«: «·„“Ìœ „‰ «·»·œ«‰ «·⁄—»Ì… Ê«·√Ã‰»Ì…</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="joke-display">
+            <div class="joke-card">
+                <div class="joke-header">
+                    <h3><i class="fas fa-joke"></i> ‰ﬂ … „’—Ì…</h3>
+                    <div class="country-indicator">
+                        <img src="https://flagcdn.com/w20/eg.png" alt="„’—">
+                        <span>„’—</span>
+                    </div>
+                </div>
+                
+                <div class="joke-content">
+                    <p id="joke-text">«÷€ÿ ⁄·Ï «·“— »«·√”›· ·⁄—÷ ‰ﬂ … ⁄‘Ê«∆Ì…</p>
+                </div>
+                
+                <div class="joke-footer">
+                    <div class="joke-category">
+                        <span class="category-tag" id="joke-category">⁄«„…</span>
+                        <span class="joke-id" id="joke-id">#0</span>
+                    </div>
+                    <div class="reaction-buttons">
+                        <button class="reaction-btn funny-btn">
+                            <i class="fas fa-laugh"></i> <span class="count">0</span>
+                        </button>
+                        <button class="reaction-btn neutral-btn">
+                            <i class="fas fa-meh"></i> <span class="count">0</span>
+                        </button>
+                        <button class="reaction-btn notfunny-btn">
+                            <i class="fas fa-frown"></i> <span class="count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="get-joke-btn" class="btn-primary">
+                    <i class="fas fa-random"></i> ‰ﬂ … ⁄‘Ê«∆Ì…
+                </button>
+                <button id="copy-joke-btn" class="btn-secondary">
+                    <i class="fas fa-copy"></i> ‰”Œ «·‰ﬂ …
+                </button>
+                <button id="share-joke-btn" class="btn-secondary">
+                    <i class="fas fa-share-alt"></i> „‘«—ﬂ…
+                </button>
+            </div>
+        </section>
+
+        <section class="statistics">
+            <h2><i class="fas fa-chart-bar"></i> ≈Õ’«∆Ì« </h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #4CAF50;">
+                        <i class="fas laug"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="total-jokes">0</h3>
+                        <p>⁄œœ «·‰ﬂ  «·„ «Õ…</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #2196F3;">
+                        <i class="fas fa-laugh"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="jokes-shown">0</h3>
+                        <p>«·‰ﬂ  «·„⁄—Ê÷…</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #FF9800;">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3>4</h3>
+                        <p>⁄œœ «·»·œ«‰</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon" style="background-color: #9C27B0;">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="total-likes">0</h3>
+                        <p>≈Ã„«·Ì «· ›«⁄·« </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2><i class="fas fa-info-circle"></i> „⁄·Ê„«  ⁄‰ «·„Êﬁ⁄</h2>
+            <div class="info-content">
+                <p>Â–« „Êﬁ⁄ „Ã«‰Ì Ì⁄—÷ ‰ﬂ « „÷Õﬂ… „‰ „Œ ·› «·»·œ«‰. »œ√‰« »„’— Ê”‰÷Ì› «·„“Ìœ „‰ «·»·œ«‰ ﬁ—Ì»«. «·‰ﬂ  „Ã„⁄… „‰ „’«œ— ⁄«„… ⁄·Ï «·≈‰ —‰  Ê„’‰›… Õ”» «·»·œ Ê«·›∆….</p>
+                <p>«·„Êﬁ⁄ „»—„Ã »·€«  HTML Ê CSS Ê JavaScript ÊÌ⁄„· »œÊ‰ √Ì  ﬂ«·Ì› «” ÷«›… »«” Œœ«„ GitHub Pages.</p>
+                <div class="features">
+                    <h3>„„Ì“«  «·„Êﬁ⁄:</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> „Ã«‰Ì »«·ﬂ«„·</li>
+                        <li><i class="fas fa-check-circle"></i> ·« Ì ÿ·»  ”ÃÌ· œŒÊ·</li>
+                        <li><i class="fas fa-check-circle"></i> Ì⁄„· ⁄·Ï Ã„Ì⁄ «·√ÃÂ“…</li>
+                        <li><i class="fas fa-check-circle"></i> Ì ÷„‰ ‰ﬂ « ÕﬁÌﬁÌ… Ê·Ì”  „Ê·œ… ¬·Ì«</li>
+                        <li><i class="fas fa-check-circle"></i> Œ«·Ì „‰ «·„Õ ÊÏ «·„”Ì¡</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>‰ﬂ  »·œÌ</h4>
+                    <p>„Êﬁ⁄ ·‰‘— «·›—Õ… Ê«·÷Õﬂ »Ì‰ «·⁄—»</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>«·»·œ«‰ «·„ «Õ…</h4>
+                    <ul>
+                        <li>„’—</li>
+                        <li>«·”⁄ÊœÌ…</li>
+                        <li>«·≈„«—« </li>
+                        <li>·»‰«‰</li>
+                        <li>ﬁ—Ì»«: «·„“Ìœ</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>ÕÊ· «·œŒ·</h4>
+                    <p>Õ«·Ì« «·„Êﬁ⁄ „Ã«‰Ì »«·ﬂ«„·. ›Ì «·„” ﬁ»·° ﬁœ ‰÷Ì› ≈⁄·«‰«  €Ì— „“⁄Ã… √Ê ‰ﬁœ„ «‘ —«ﬂ« „„Ì“« ·≈“«·… «·≈⁄·«‰«  ⁄‰œ„« Ì‰„Ê ⁄œœ «·“Ê«—.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2023 ‰ﬂ  »·œÌ. Ã„Ì⁄ «·ÕﬁÊﬁ „Õ›ÊŸ…. «·‰ﬂ  „Ã„⁄… „‰ „’«œ— ⁄«„….</p>
+                <p> „ «· ÿÊÌ— »«” Œœ«„ HTML, CSS Ê JavaScript. „” ÷«› ⁄·Ï <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jokes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
